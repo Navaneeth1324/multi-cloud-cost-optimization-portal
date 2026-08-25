@@ -54,10 +54,10 @@ Modern enterprises operate across multiple cloud providers (AWS, Microsoft Azure
 ```mermaid
 flowchart TD
     %% Actors
-    FA(["fa:fa-user FinOps Analyst"]):::actor
-    CA(["fa:fa-user-gear Cloud Administrator"]):::actor
-    CP[("fa:fa-cloud Cloud Provider APIs\n(AWS / Azure / GCP)")]:::systemActor
-    NS[("fa:fa-bell Notification Service\n(Email / Slack)")]:::systemActor
+    FA(["FinOps Analyst"]):::actor
+    CA(["Cloud Administrator"]):::actor
+    CP[("Cloud Provider APIs<br/>AWS / Azure / GCP")]:::systemActor
+    NS[("Notification Service<br/>Email / Slack / Webhook")]:::systemActor
 
     %% System Boundary
     subgraph Portal["Multi-Cloud Asset Cost Optimization Portal"]
@@ -66,9 +66,9 @@ flowchart TD
         UC3(["UC-03: Detect Idle Compute Instances"]):::usecase
         UC4(["UC-04: Identify Unattached Storage Volumes"]):::usecase
         UC5(["UC-05: Configure Budget Thresholds"]):::usecase
-        UC6(["UC-06: Monitor Budget & Dispatch Alert"]):::usecase
-        UC7(["UC-07: Generate Cost Optimization Report"]):::usecase
-        UC8(["UC-08: Execute Resource Remediation Action"]):::usecase
+        UC6(["UC-06: Monitor Budget & Dispatch Alerts"]):::usecase
+        UC7(["UC-07: Generate Cost Optimization Reports"]):::usecase
+        UC8(["UC-08: Execute Resource Remediation Actions"]):::usecase
         UC9(["UC-09: Authenticate & Authorize User"]):::usecase
         UC10(["UC-10: Snapshot Resource State"]):::usecase
     end
@@ -83,19 +83,19 @@ flowchart TD
     %% Relationships for Cloud Administrator
     CA --> UC1
     CA --> UC5
-    CA --> UC8
     CA --> UC7
+    CA --> UC8
 
     %% Include Relationships (Mandatory sub-flows)
-    UC1 -.->|«include»| UC2
-    UC1 -.->|«include»| UC9
-    UC8 -.->|«include»| UC9
+    UC1 -.->|"<<include>>"| UC2
+    UC1 -.->|"<<include>>"| UC9
+    UC8 -.->|"<<include>>"| UC9
 
     %% Extend Relationships (Optional / Conditional extensions)
-    UC6 -.->|«extend»\n(On Threshold Breach)| UC2
-    UC10 -.->|«extend»\n(Before Delete / Terminate)| UC8
-    UC8 -.->|«extend»\n(Upon Admin Approval)| UC3
-    UC8 -.->|«extend»\n(Upon Admin Approval)| UC4
+    UC6 -.->|"<<extend>> (On Threshold Breach)"| UC2
+    UC10 -.->|"<<extend>> (Before Deletion)"| UC8
+    UC8 -.->|"<<extend>> (Upon Admin Approval)"| UC3
+    UC8 -.->|"<<extend>> (Upon Admin Approval)"| UC4
 
     %% Secondary System Actor Connections
     UC1 <--> CP
