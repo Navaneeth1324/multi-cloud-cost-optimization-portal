@@ -20,6 +20,10 @@ multi-cloud-cost-optimization-portal/
 │   ├── README.md              # Jira Epics & User Stories, Story Points, Sprint Board, Burndown & Reflection Q&A
 │   ├── Lab2_Agile_Backlog_Jira_PES1UG24CS709.pdf  # Original submitted lab report PDF
 │   └── screenshots/           # High-resolution Jira backlog, sprint, and burndown chart screenshots
+├── Lab-3/                     # Lab 3: Component Modelling & Architectural Pattern Selection
+│   ├── README.md              # Architectural evaluation, MCCOP & Coffee Kiosk diagrams, ball-and-socket specs, justification
+│   ├── Lab3_Component_Modelling_PES1UG24CS709.pdf  # Formatted publication-ready lab submission PDF
+│   └── diagrams/              # High-resolution 300 DPI UML component diagrams with ball-and-socket notation
 ├── project/                   # Multi-Cloud Cost Optimization Portal Web Application (CloudCost IQ)
 │   ├── README.md              # Project overview, architecture, module mapping, and run instructions
 │   ├── package.json           # React 18, Vite 6, Tailwind CSS, Recharts, Lucide, jsPDF
@@ -38,6 +42,8 @@ multi-cloud-cost-optimization-portal/
 | **Lab 1: Requirements & UML Modelling** | SRS, Functional & Non-Functional Requirements, Mermaid Use-Case Model, Detailed Flow of Events | [**Lab-1/README.md**](Lab-1/README.md) |
 | **Lab 2: Agile Backlog & Jira Sprint** | 10 Jira User Stories (MCCOP-5 to MCCOP-14), Planning Poker / Fibonacci Estimations, Active Sprint Board, Burndown Chart Analysis, Reflection Q&A | [**Lab-2/README.md**](Lab-2/README.md) |
 | **Lab 2 Report (PDF)** | Original PDF submission with Jira backlog, story points, sprint board, and burndown chart screenshots | [**Download Lab 2 PDF**](Lab-2/Lab2_Agile_Backlog_Jira_PES1UG24CS709.pdf) |
+| **Lab 3: Component Modelling & Architecture** | Architectural pattern evaluations, ball-and-socket UML component diagrams (MCCOP & Coffee Kiosk), interface specs, and 1-page written justification | [**Lab-3/README.md**](Lab-3/README.md) |
+| **Lab 3 Report (PDF)** | Publication-ready PDF submission report with embedded high-res diagrams, comparative tables, and written justification | [**Download Lab 3 PDF**](Lab-3/Lab3_Component_Modelling_PES1UG24CS709.pdf) |
 | **Project Implementation** | Full-featured interactive React/TypeScript FinOps portal application | [**project/**](project/) |
 
 ---
