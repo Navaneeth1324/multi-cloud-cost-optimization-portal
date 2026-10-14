@@ -24,6 +24,13 @@ multi-cloud-cost-optimization-portal/
 │   ├── README.md              # Architectural evaluation, MCCOP & Coffee Kiosk diagrams, ball-and-socket specs, justification
 │   ├── Lab3_Component_Modelling_PES1UG24CS709.pdf  # Formatted publication-ready lab submission PDF
 │   └── diagrams/              # High-resolution 300 DPI UML component diagrams with ball-and-socket notation
+├── Lab-5/                     # Lab 5: Static Code Analysis (Pylint, Bandit, Flake8)
+│   ├── README.md              # Static analysis walkthrough, benchmark scores, and verification guide
+│   ├── ticket_booking_system.py # Refactored Python code (10.00/10 Pylint, 0 Bandit, 0 Flake8)
+│   ├── issues.md              # Documented issues and remediations table
+│   ├── reflection.md          # Reflection Q&A on tools, vulnerabilities, and Shift-Left workflows
+│   ├── Lab5_Static_Code_Analysis_Student_handout.pdf # Lab instructions handout
+│   └── *_report*.txt          # Tool before and after reports (Pylint, Bandit, Flake8)
 ├── project/                   # Multi-Cloud Cost Optimization Portal Web Application (CloudCost IQ)
 │   ├── README.md              # Project overview, architecture, module mapping, and run instructions
 │   ├── package.json           # React 18, Vite 6, Tailwind CSS, Recharts, Lucide, jsPDF
@@ -44,6 +51,7 @@ multi-cloud-cost-optimization-portal/
 | **Lab 2 Report (PDF)** | Original PDF submission with Jira backlog, story points, sprint board, and burndown chart screenshots | [**Download Lab 2 PDF**](Lab-2/Lab2_Agile_Backlog_Jira_PES1UG24CS709.pdf) |
 | **Lab 3: Component Modelling & Architecture** | Architectural pattern evaluations, ball-and-socket UML component diagrams (MCCOP & Coffee Kiosk), interface specs, and 1-page written justification | [**Lab-3/README.md**](Lab-3/README.md) |
 | **Lab 3 Report (PDF)** | Publication-ready PDF submission report with embedded high-res diagrams, comparative tables, and written justification | [**Download Lab 3 PDF**](Lab-3/Lab3_Component_Modelling_PES1UG24CS709.pdf) |
+| **Lab 5: Static Code Analysis** | Python code hardening, 10.00/10 Pylint score, 0 Bandit & 0 Flake8 issues, issues table, reflection Q&A, and reports | [**Lab-5/README.md**](Lab-5/README.md) |
 | **Project Implementation** | Full-featured interactive React/TypeScript FinOps portal application | [**project/**](project/) |
 
 ---
